@@ -5,6 +5,6 @@ $.getJSON('data/products.json', function(data) {
     let products = data.products;
     // method pengulangan(looping) pada jquery dinamakan $.each
     $.each(products, function (i, data) {
-        console.log(i)
+        
     })
 });
