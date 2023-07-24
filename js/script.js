@@ -24,6 +24,12 @@ $('.nav-link').on('click', function() {
     // variabel kategori menampung semua tulisan kategori yang kita klik, this = pada li yg kita klik, .html() = ambil html nya
     let kategori = $(this).html();
     $('h1').html(kategori);
+    
+    // membuat agar ketika klik 'All Item' maka semua item akan muncul meskipun tidak ada kategori yang namanya 'All Item'
+    if(kategori == 'All Item') {
+        tampilkanSemuaProduk()
+        return // agar logic selanjutnya tidak dijalankan shg dituliskan return supaya dia keluar dari function
+    }
 
     // menampilkan item sesuai dengan kategori yang dipilih
     $.getJSON('data/products.json', function(data) {
