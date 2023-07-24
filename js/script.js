@@ -21,4 +21,19 @@ $('.nav-link').on('click', function() {
     let kategori = $(this).html();
     $('h1').html(kategori);
 
+    // menampilkan item sesuai dengan kategori yang dipilih
+    $.getJSON('data/products.json', function(data) {
+        let products = data.products;
+        let content = '';
+
+        $.each(products, function (i, data) {
+            if (data.category == kategori.toLowerCase()) {
+                content += '<div class="col-md-4"><div class="card mb-3"><img src="'+ data.images[0] + '"class="card-img-top"><div class="card-body"><h5 class="card-title">' + data.title + '/h5><p class="card/text">' + data.description + '</p><h5 class="card-title">' + data.price + '</h5><a href="#" class="btn btn-primary">Order Now</a></div></div></div>';
+            }
+        });
+
+        $('#daftar-menu').html(content);
+
+    });
+
 });
