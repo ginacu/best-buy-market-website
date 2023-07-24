@@ -9,3 +9,16 @@ $.getJSON('data/products.json', function(data) {
         $('#daftar-menu').append('<div class="col-md-4">        <div class="card mb-3"><img src="'+ data.images[0] + '"class="card-img-top"><div class="card-body"><h5 class="card-title">' + data.title + '/h5><p class="card/text">' + data.description + '</p><h5 class="card-title">' + data.price + '</h5><a href="#" class="btn btn-primary">Order Now</a></div></div></div>')
     });
 });
+
+$('.nav-link').on('click', function() {
+    // hapus semua kelas 'active' pada kelas nav-link
+    $('.nav-link').removeClass('active');
+    // pada this(atau li/tag yang kita klik) tambahkan active, berfungsi agar kelas active muncul ketika kita klik navnya
+    $(this).addClass('active');
+
+    // mengubah h1 misal "All Item" menjadi tulisan sesuai dengan kategori / nav yang diklik
+    // variabel kategori menampung semua tulisan kategori yang kita klik, this = pada li yg kita klik, .html() = ambil html nya
+    let kategori = $(this).html();
+    $('h1').html(kategori);
+
+});
