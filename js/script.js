@@ -26,7 +26,7 @@ $('.nav-link').on('click', function() {
     $('h1').html(kategori);
     
     // membuat agar ketika klik 'All Item' maka semua item akan muncul meskipun tidak ada kategori yang namanya 'All Item'
-    if(kategori == 'All Item') {
+    if(kategori == 'ALL ITEM') {
         tampilkanSemuaProduk()
         return // agar logic selanjutnya tidak dijalankan shg dituliskan return supaya dia keluar dari function
     }

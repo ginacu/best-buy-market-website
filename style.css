@@ -1,3 +1,7 @@
+* {
+    font-family: 'Ubuntu';
+}
+
 /* css reset */
 html, body, div, span, applet, object, iframe,
 h1, h2, h3, h4, h5, h6, p, blockquote, pre,
@@ -25,6 +29,7 @@ footer, header, hgroup, menu, nav, section {
 	display: block;
 }
 body {
+    font-family: 'Ubuntu';
 	line-height: 1;
 }
 ol, ul {
@@ -46,12 +51,33 @@ table {
 /* HEADER */
 
 .logo {
-    height: 60px;
-    border: 1px solid black;
-    display: flex;
-    justify-content: center;
+    height: 90px;
+	display: flex;
+	justify-content: center;
+	align-items: center;
 }
 
 .logo img {
     height: 50px;
+}
+
+.nav-item {
+	background-color: #f3efef;
+	margin-top: 10px;
+
+}
+
+.nav-item a {
+	color: #858484;
+}
+
+.nav-item .active {
+	background-color: white !important;
+	color: black !important;
+	border-radius: 0 !important;
+}
+
+@font-face {
+    font-family: "Ubuntu";
+    src: url('assets/ubuntu-l-webfont.woff') format('woff');
 }
