@@ -5,3 +5,4 @@ Acknowledgments
 * [json data][https://dummyjson.com/products]
 * [flaticon][https://www.flaticon.com/free-icon/responsive_896530]
 * [font squirell][https://www.fontsquirrel.com/fonts/ubuntu]
+* [remix icon][https://remixicon.com/]
