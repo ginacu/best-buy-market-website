@@ -77,7 +77,43 @@ table {
 	border-radius: 0 !important;
 }
 
+.ri-menu-line {
+	font-size: 20px;
+    position: absolute;
+    top: 40px;
+    right: 30px;
+    padding-left: 10px;
+    cursor: pointer;
+    z-index: 10001;
+	transition: all .50s ease;
+    display: none;
+}
+
 @font-face {
     font-family: "Ubuntu";
     src: url('assets/ubuntu-l-webfont.woff') format('woff');
 }
+
+@media screen and (max-width: 870px) {
+	.nav-item {
+		position: absolute;
+		z-index: 10001;
+		top: 65px;
+		right: 30px;
+		width: 270px;
+		height: 29vh;
+		background-color: #858484;
+		color: white;
+	}
+
+	.ri-menu-line {
+		display: block;
+	}
+}
+  
+
+/* @media screen and (max-width: 650px) {
+	.nav-item {
+		font-size: 10px;
+	}
+} */
