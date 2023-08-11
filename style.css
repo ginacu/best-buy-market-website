@@ -94,16 +94,21 @@ table {
     src: url('assets/ubuntu-l-webfont.woff') format('woff');
 }
 
-@media screen and (max-width: 870px) {
-	.nav-item {
+@media screen and (max-width: 890px) {
+	.nav {
 		position: absolute;
 		z-index: 10001;
 		top: 65px;
 		right: 30px;
 		width: 270px;
-		height: 29vh;
-		background-color: #858484;
-		color: white;
+		background-color: #f3efef;
+		display: flex;
+		flex-direction: column;
+		justify-content: flex-start;
+		border-radius: 4px;
+		transition: all .50s ease;
+		font-size: 14px;
+		padding: 0;
 	}
 
 	.ri-menu-line {
