@@ -64,7 +64,7 @@ table {
 .nav-item {
 	background-color: #f3efef;
 	margin-top: 10px;
-
+	font-size: 20px;
 }
 
 .nav-item a {
@@ -94,6 +94,13 @@ table {
     src: url('assets/ubuntu-l-webfont.woff') format('woff');
 }
 
+@media screen and (max-width: 1120px) {
+	.nav-item{
+		font-size: 16px;
+		transition: 2s;
+	}
+}
+
 @media screen and (max-width: 890px) {
 	.nav {
 		position: absolute;
@@ -108,7 +115,11 @@ table {
 		border-radius: 4px;
 		transition: all .50s ease;
 		font-size: 14px;
-		padding: 0;
+	}
+
+	.nav-item {
+		margin-top: -2px;
+		border-radius: 4px;
 	}
 
 	.ri-menu-line {

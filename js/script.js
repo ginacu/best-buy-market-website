@@ -19,6 +19,7 @@ $('.nav-link').on('click', function() {
     $('.nav-link').removeClass('active');
     // pada this(atau li/tag yang kita klik) tambahkan active, berfungsi agar kelas active muncul ketika kita klik navnya
     $(this).addClass('active');
+    // $('.nav-item').addClass('.bg-white');
 
     // mengubah h1 misal "All Item" menjadi tulisan sesuai dengan kategori / nav yang diklik
     // variabel kategori menampung semua tulisan kategori yang kita klik, this = pada li yg kita klik, .html() = ambil html nya
