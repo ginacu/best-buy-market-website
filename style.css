@@ -97,9 +97,9 @@ h1{
 	box-shadow: 5px 5px 10px -4px #000;
 	transition: 0.3s;}
 
-/* .card img {
-	height: 50px;
-} */
+.card img {
+	height: 250px;
+}
 
 @font-face {
     font-family: "Ubuntu";
