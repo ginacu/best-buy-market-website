@@ -57,9 +57,7 @@ table {
 	align-items: center;
 }
 
-.logo img {
-    height: 50px;
-}
+.logo img { height: 50px; }
 
 .nav-item {
 	background-color: #f3efef;
@@ -67,9 +65,7 @@ table {
 	font-size: 20px;
 }
 
-.nav-item a {
-	color: #858484;
-}
+.nav-item a { color: #858484; }
 
 .nav-item .active {
 	background-color: white !important;
@@ -89,17 +85,15 @@ table {
     display: none;
 }
 
-h1{
-	font-size: 25px;
-}
+h1 { font-size: 25px; }
+
+.card { border: 0; }
 
 .card:hover{
 	box-shadow: 5px 5px 10px -4px #000;
 	transition: 0.3s;}
 
-.card img {
-	height: 250px;
-}
+.card img { height: 250px; }
 
 @font-face {
     font-family: "Ubuntu";
@@ -135,11 +129,7 @@ h1{
 		border-radius: 4px;
 	}
 
-	#menu-icon {
-		display: block;
-	}
+	#menu-icon { display: block; }
 
-	.nav.open {
-		visibility: hidden;
-	}
+	.nav.open { visibility: hidden; }
 }
