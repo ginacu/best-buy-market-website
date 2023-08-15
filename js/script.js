@@ -7,7 +7,7 @@ function tampilkanSemuaProduk() {
         // method pengulangan(looping) pada jquery dinamakan $.each
         $.each(products, function (i, data) {
             // arti kode di bawah adalah: jquery carikan saya elemen yang id nya daftar-produk lalu tambahkan di akhir(append) sebuah elemen baru (string html pembuat card)
-            $('#daftar-produk').append('<div class="col-md-4">        <div class="card mb-3"><img src="'+ data.images[0] + '"class="card-img-top"><div class="card-body"><h5 class="card-title">' + data.title + '/h5><p class="card/text">' + data.description + '</p><h5 class="card-title">' + data.price + '</h5><a href="#" class="btn btn-primary">Order Now</a></div></div></div>')
+            $('#daftar-produk').append('<div class="col-md-4"><div class="card mb-3 border-0 h-100"><img src="'+ data.images[0] + '"class="card-img-top" style="height: 250px;"><div class="card-body"><h5 class="card-title">' + data.title + '/h5><p class="card/text">' + data.description + '</p><h5 class="card-title">' + data.price + '</h5><a href="#" class="btn btn-primary">Order Now</a></div></div></div>')
         });
     });
 }

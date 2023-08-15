@@ -93,6 +93,14 @@ h1{
 	font-size: 25px;
 }
 
+.card:hover{
+	box-shadow: 5px 5px 10px -4px #000;
+	transition: 0.3s;}
+
+/* .card img {
+	height: 50px;
+} */
+
 @font-face {
     font-family: "Ubuntu";
     src: url('assets/ubuntu-l-webfont.woff') format('woff');
