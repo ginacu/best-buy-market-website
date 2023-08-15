@@ -89,6 +89,10 @@ table {
     display: none;
 }
 
+h1{
+	font-size: 25px;
+}
+
 @font-face {
     font-family: "Ubuntu";
     src: url('assets/ubuntu-l-webfont.woff') format('woff');
