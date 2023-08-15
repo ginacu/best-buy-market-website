@@ -77,7 +77,7 @@ table {
 	border-radius: 0 !important;
 }
 
-.ri-menu-line {
+#menu-icon {
 	font-size: 20px;
     position: absolute;
     top: 40px;
@@ -115,6 +115,7 @@ table {
 		border-radius: 4px;
 		transition: all .50s ease;
 		font-size: 14px;
+		
 	}
 
 	.nav-item {
@@ -122,14 +123,11 @@ table {
 		border-radius: 4px;
 	}
 
-	.ri-menu-line {
+	#menu-icon {
 		display: block;
 	}
-}
-  
 
-/* @media screen and (max-width: 650px) {
-	.nav-item {
-		font-size: 10px;
+	.nav.open {
+		visibility: hidden;
 	}
-} */
+}

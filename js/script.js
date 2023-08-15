@@ -48,3 +48,9 @@ $('.nav-link').on('click', function() {
     });
 
 });
+
+// logika membuka menu bar ketika screen mengecil
+
+$('#menu-icon').click(function() {
+    $('.nav').toggleClass('open');
+});
