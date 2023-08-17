@@ -48,17 +48,6 @@ table {
 	border-spacing: 0;
 }
 
-/* HEADER */
-
-/* header {
-	position: fixed;
-	z-index: 99;
-	background-color: white;
-	top: 13%;
-	left: 50%;
-	transform: translate(-40%, -40%);
-} */
-
 .logo {
     height: 90px;
 	display: flex;
@@ -142,5 +131,12 @@ h1 { font-size: 25px; }
 
 	#menu-icon { display: block; }
 
-	.nav.open { visibility: hidden; }
+	.nav.open { left: 100%;}
+}
+
+@media screen and (max-width: 575px) {
+	.logo img {
+		height: 30px;
+		transition: all .80s ease;
+	}
 }
