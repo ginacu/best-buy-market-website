@@ -50,6 +50,15 @@ table {
 
 /* HEADER */
 
+/* header {
+	position: fixed;
+	z-index: 99;
+	background-color: white;
+	top: 13%;
+	left: 50%;
+	transform: translate(-40%, -40%);
+} */
+
 .logo {
     height: 90px;
 	display: flex;
