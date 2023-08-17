@@ -131,7 +131,7 @@ h1 { font-size: 25px; }
 
 	#menu-icon { display: block; }
 
-	.nav.open { left: 100%;}
+	.nav.open { display: none;}
 }
 
 @media screen and (max-width: 575px) {
