@@ -28,8 +28,8 @@ $('.nav-link').on('click', function() {
     
     // membuat agar ketika klik 'All Item' maka semua item akan muncul meskipun tidak ada kategori yang namanya 'All Item'
     if(kategori == 'ALL ITEM') {
-        tampilkanSemuaProduk()
-        return // agar logic selanjutnya tidak dijalankan shg dituliskan return supaya dia keluar dari function
+        tampilkanSemuaProduk();
+        location.reload(); // me-reload pages untuk menghilangkan bug yang menampilkan menu lain setelah klik kategori lain a.k.a data menjadi double setelah klik kategori lain sebelum klik all item
     }
 
     // menampilkan item sesuai dengan kategori yang dipilih
